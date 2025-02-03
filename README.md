@@ -33,7 +33,7 @@ The project consists of two main components:
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.8-3.11
 - Node.js 16+
 - npm 8+
 
