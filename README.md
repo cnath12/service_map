@@ -12,12 +12,12 @@ A real-time service dependency visualization tool that helps SREs understand rel
 - Basic error handling and loading states
 - Draggable nodes and zoomable interface
 
+## Requirements
+- Python 3.8-3.11
+
 ## Architecture
 
 The project consists of two main components:
-
-## Requirements
-- Python 3.8-3.11
 
 ### Backend (Python/FastAPI)
 - Traffic data ingestion
