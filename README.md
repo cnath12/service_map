@@ -16,6 +16,9 @@ A real-time service dependency visualization tool that helps SREs understand rel
 
 The project consists of two main components:
 
+## Requirements
+- Python 3.8-3.11
+
 ### Backend (Python/FastAPI)
 - Traffic data ingestion
 - Service registry management
@@ -103,7 +106,19 @@ curl -X POST http://localhost:8000/api/v1/traffic -H "Content-Type: application/
   "dest_port": 443,
   "timestamp": "2024-02-01T12:00:00Z"
 }'
+
+# Send batch traffic data
+curl -X POST http://localhost:8000/api/v1/traffic/batch -H "Content-Type: application/json" -d '[
+  {
+    "source_ip": "10.128.72.69",
+    "source_port": 32032,
+    "dest_ip": "10.128.72.20",
+    "dest_port": 443,
+    "timestamp": "2024-02-01T12:00:00Z"
+  }
+]'
 ```
+
 
 ## Testing
 
